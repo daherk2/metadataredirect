@@ -1,0 +1,73 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+    <title>Redirecionador de Metadados</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand-md">
+        <div class="container-fluid"><a class="navbar-brand" href="#">Redirecionador de Metadados</a>
+        </div>
+    </nav>
+    <form action="/" method="POST" enctype = "multipart/form-data">
+        <div class="container">
+            <div class="form-row">
+                <div class="col-6"><label>URL:</label><input name="url" type="text" class="form-control" /></div>
+            </div>
+            <div class="form-row" style="margin-top: 2rem;">
+                <div class="col-6"><label>Título:</label><input name="title" type="text" class="form-control" /></div>
+            </div>
+            <div class="form-row" style="margin-top: 2rem;">
+                <div class="col-6"><label>Descrição:</label><input name="desc" type="text" class="form-control" /></div>
+            </div>
+            <div class="form-row" style="margin-top: 2rem;">
+                <div class="col-6"><label>Imagem</label><input name="file" id="file" type="file" class="form-control" /></div>
+            </div>
+            <div class="form-row" style="margin-top: 2rem;">
+                <div class="col-6"><button type="submit" class="btn btn-primary">Gerar Metatag</button></div>
+            </div>
+        </div>
+    </form>
+
+    <!--
+    data = data.replace("AAAAA","Um exeplo de artigo")
+    data = data.replace("BBBBB", "So mais um exemplo")
+    data = data.replace("CCCCC", "https://2d198476f352.ngrok.io/media/image.png")
+    data = data.replace("DDDDD", "https://arxiv.org/pdf/1905.01723.pdf")
+    data = data.replace("EEEEE", "So mais um exemplo")
+    data = data.replace("FFFFF", "Um exeplo de artigo")
+    -->
+
+    <style>
+        footer {
+        position: relative;
+        height: 300px;
+        width: 100%;
+        background-color: transparent;
+    }
+
+    p.copyright {
+        position: absolute;
+        width: 100%;
+        color: gray;
+        line-height: 40px;
+        font-size: 0.8em;
+        text-align: center;
+        bottom:0;
+    }
+    </style>
+
+    <footer>
+         <p class="copyright">2020</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
